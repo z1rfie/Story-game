@@ -18,3 +18,8 @@ You are **Minami**, an ordinary girl whose life changed the moment you discovere
 - **Return home** what was lost between the lines?
 
 _When the final page is restored, will you wake up in the library... or will you remain a part of this story forever?_
+
+### A brief introduction of the game
+![alt text](source/Sheme.png)
+There are also some dialogues in the game that will be displayed as follows:
+![alt text](source/Novell.png)
