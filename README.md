@@ -22,4 +22,4 @@ _When the final page is restored, will you wake up in the library... or will you
 ### A brief introduction of the game
 ![alt text](source/Sheme.png)
 There are also some dialogues in the game that will be displayed as follows:
-![alt text](source/Novell.png)
+![alt text](source/Novell.jpg)
