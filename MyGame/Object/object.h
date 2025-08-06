@@ -9,7 +9,7 @@ protected:
 	int _coord_x;
 	int _coord_y;
 	char _image;
-	float _speed_moving;
+	//float _speed_moving;
 public:
 	Object(int, int, char, float);
 	Object(const Object& other);
