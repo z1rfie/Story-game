@@ -4,26 +4,23 @@
 
 Object::Object(int coord_x,
     int coord_y,
-    char image, float speed_moving) :
+    char image) :
     _coord_x(coord_x),
     _coord_y(coord_y),
-    _image(image),
-    _speed_moving(speed_moving) {
+    _image(image) {
     init_correctness();
-}
+ }
 
 Object::Object(const Object& other) {
     _coord_x = other._coord_x;
     _coord_y = other._coord_y;
     _image = other._image;
-    _speed_moving = other._speed_moving;
 }
 
 Object::Object() :
     _coord_x(WIDTH / 2),
     _coord_y(HEIGHT / 2),
-    _image('&'),
-    _speed_moving(10) {
+    _image('&') {
 }
 
 int Object::get_coord_x() {
@@ -38,16 +35,15 @@ char Object::get_image() {
     return _image;
 }
 
-float Object::get_speed_moving() {
-    return _speed_moving;
-}
+//float Object::get_speed_moving() {
+//    return _speed_moving;
+//}
 
 Object& Object::operator=(const Object& other) {
     if (this != &other) {
         _coord_x = other._coord_x;
         _coord_y = other._coord_y;
         _image = other._image;
-        _speed_moving = other._speed_moving;
     }
     return *this;
 }
@@ -55,13 +51,12 @@ Object& Object::operator=(const Object& other) {
 bool Object::operator==(const Object& other) const {
     return _coord_x == other._coord_x &&
         _coord_y == other._coord_y &&
-        _image == other._image &&
-        _speed_moving == other._speed_moving;
+        _image == other._image;
 }
 
 std::ostream& operator<<(std::ostream& os, const Object& obj) {
     os << "Object(" << obj._coord_x << ", " << obj._coord_y
-        << ", '" << obj._image << "', " << obj._speed_moving << ")";
+        << ", '" << obj._image << "', " << ")";
     return os;
 }
 

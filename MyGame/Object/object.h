@@ -11,14 +11,14 @@ protected:
 	char _image;
 	//float _speed_moving;
 public:
-	Object(int, int, char, float);
+	Object(int, int, char);
 	Object(const Object& other);
 	Object();
 
 	int get_coord_x();
 	int get_coord_y();
 	char get_image();
-	float get_speed_moving();
+	//float get_speed_moving();
 
 	Object& operator=(const Object& other);
 	bool operator==(const Object& other) const;

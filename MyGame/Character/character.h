@@ -20,6 +20,6 @@ public:
 
 	void attack_the_character(Character& goal);
 	void being_attacked(int damage);
-private:
+	void heal(int amount);
 	bool isAlive() const;
 };

@@ -13,5 +13,20 @@ void Character::attack_the_character(Character& goal) {
 	if (!isAlive() || !goal.isAlive()) return;
 	goal.being_attacked(_impact_force);
 }
-void Character::being_attacked(int damage) { _health -= damage; }
+void Character::being_attacked(int damage) { 
+	if (!isAlive()) return;
+
+	_health -= damage; 
+	if (_health <= 0) {
+		_health = 0;
+	}
+}
+void Character::heal(int amount) {
+	if (amount <= 0) return;
+
+	_health += amount;
+	if (_health > 10) {
+		_health = 10; // 10 - max heal
+	}
+}
 bool Character::isAlive() const { return _health > 0; }
