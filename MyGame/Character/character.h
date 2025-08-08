@@ -18,7 +18,7 @@ public:
 	int get_impact_force();
 	int get_attack_speed();
 
-	void attack_the_character(Character& goal);
+	void attack_the_character(Character& goal, int impact_force);
 	void being_attacked(int damage);
 	void heal(int amount);
 	bool isAlive() const;

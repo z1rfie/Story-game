@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GameObject", "GameObject\Ga
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Heal", "Heal\Heal.vcxproj", "{C7D75DDE-7B08-4AE9-9DAB-0E5153E4AE44}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Weapon", "Weapon\Weapon.vcxproj", "{D87420FA-4A6D-4492-890B-6365E35F6173}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -51,6 +53,14 @@ Global
 		{C7D75DDE-7B08-4AE9-9DAB-0E5153E4AE44}.Release|x64.Build.0 = Release|x64
 		{C7D75DDE-7B08-4AE9-9DAB-0E5153E4AE44}.Release|x86.ActiveCfg = Release|Win32
 		{C7D75DDE-7B08-4AE9-9DAB-0E5153E4AE44}.Release|x86.Build.0 = Release|Win32
+		{D87420FA-4A6D-4492-890B-6365E35F6173}.Debug|x64.ActiveCfg = Debug|x64
+		{D87420FA-4A6D-4492-890B-6365E35F6173}.Debug|x64.Build.0 = Debug|x64
+		{D87420FA-4A6D-4492-890B-6365E35F6173}.Debug|x86.ActiveCfg = Debug|Win32
+		{D87420FA-4A6D-4492-890B-6365E35F6173}.Debug|x86.Build.0 = Debug|Win32
+		{D87420FA-4A6D-4492-890B-6365E35F6173}.Release|x64.ActiveCfg = Release|x64
+		{D87420FA-4A6D-4492-890B-6365E35F6173}.Release|x64.Build.0 = Release|x64
+		{D87420FA-4A6D-4492-890B-6365E35F6173}.Release|x86.ActiveCfg = Release|Win32
+		{D87420FA-4A6D-4492-890B-6365E35F6173}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

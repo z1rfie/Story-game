@@ -15,7 +15,7 @@ void Heal::buff(Character& goal) {
 }
 void Heal::interact() {
 	if (!_is_active) return;
-    std::cout << "Ёто“ лечебный предмет: " << _description
+    std::cout << "Ётот лечебный предмет: " << _description
         << " (восстанавливает " << _heal_amount << " HP)\n";
 }
 
