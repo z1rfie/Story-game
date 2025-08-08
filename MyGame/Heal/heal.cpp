@@ -8,10 +8,11 @@ Heal::Heal(int coord_x, int coord_y, char image,
     GameObject(coord_x, coord_y, image, title, description, true),
     _heal_amount(heal_amount) {}
 
-void Heal::buff(Character& goal) {
+void Heal::buff(Character& goal, GameObject& obj) {
     if (!_is_active) return;
     if (!goal.isAlive()) return;
     goal.heal(_heal_amount);
+    obj.set_active(false);
 }
 void Heal::interact() {
 	if (!_is_active) return;

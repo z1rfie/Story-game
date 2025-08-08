@@ -1,6 +1,6 @@
 #pragma once
-#include "game_object.h"
-#include "character.h"
+#include "../GameObject/game_object.h"
+#include "../Character/character.h"
 
 class Heal : GameObject {
 protected:
@@ -10,7 +10,7 @@ public:
 		const std::string& title, const std::string& description,
 		bool is_active, int heal_amount);
 
-	virtual void buff(Character& goal);
+	virtual void buff(Character& goal, GameObject& obj);
 	void interact() override;
 
 	int get_heal_amount();
